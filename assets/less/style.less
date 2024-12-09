@@ -1,0 +1,30 @@
+@import 'resources/_variables.less';
+@import 'resources/_mixins.less';
+@import 'resources/_reset.less';
+
+body {
+    font-family: "Prociono", serif;
+    color: @color__black;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: @color__white; }
+::-webkit-scrollbar-thumb { background: @color__primary; }
+
+.d_block { display: block; }
+.d_flex { display: flex; }
+.w_100 { width: 100%; }
+.friendly_anchortext { font-size: 0; color: transparent; letter-spacing: 0; }
+
+.main { 
+    background-image: @bg_url;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@import 'components/_grid.less';
+@import 'components/_table.less';
+@import 'components/_footer.less';
